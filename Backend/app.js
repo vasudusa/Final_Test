@@ -11,7 +11,7 @@ const { summary } = require('./api/controllers/orders');
 const { adminAuth } = require('./api/middleware/check-auth');
 require('dotenv').config()
 
-mongoose.connect(process.env.MONGO_URL_DEV);
+mongoose.connect(process.env.MONGODB_URL);
 
 const app = express();
 // Log request data
